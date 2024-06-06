@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="src\" />
+    <None Remove="src\Enums\" />
+    <None Remove="src\Extensions\" />
+    <None Remove="src\Models\" />
+    <None Remove="src\Services\" />
+    <None Remove="src\Interfaces\" />
+    <None Remove="src\Utilities\" />
+    <None Remove="src\Tests\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="src\" />
+    <Folder Include="src\Enums\" />
+    <Folder Include="src\Extensions\" />
+    <Folder Include="src\Models\" />
+    <Folder Include="src\Services\" />
+    <Folder Include="src\Interfaces\" />
+    <Folder Include="src\Utilities\" />
+    <Folder Include="src\Tests\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
+    <PackageReference Include="EPPlus" Version="7.1.3" />
+    <PackageReference Include="NUnit" Version="4.1.0" />
+    <PackageReference Include="Moq" Version="4.20.70" />
+  </ItemGroup>
+</Project>
